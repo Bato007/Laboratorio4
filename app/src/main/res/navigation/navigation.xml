@@ -18,21 +18,23 @@
         android:name="com.example.guatemalalaboratorio4.InformationFragment"
         android:label="InformationFragment" >
         <action
-            android:id="@+id/action_informationFragment_to_commentary"
-            app:destination="@id/commentary" />
-        <action
-            android:id="@+id/action_informationFragment_to_guatemalaFragment2"
-            app:destination="@id/guatemalaFragment2"
-            app:popUpTo="@+id/guatemalaFragment2" />
+            android:id="@+id/action_informationFragment_to_commentaryFragment"
+            app:destination="@id/commentaryFragment" />
     </fragment>
     <fragment
         android:id="@+id/biographyFragment"
         android:name="com.example.guatemalalaboratorio4.BiographyFragment"
         android:label="biography_fragment"
         tools:layout="@layout/biography_fragment" />
-    <activity
-        android:id="@+id/commentary"
-        android:name="com.example.guatemalalaboratorio4.Commentary"
+    <fragment
+        android:id="@+id/commentaryFragment"
+        android:name="com.example.guatemalalaboratorio4.CommentaryFragment"
         android:label="activity_commentary"
-        tools:layout="@layout/activity_commentary" />
+        tools:layout="@layout/activity_commentary" >
+        <action
+            android:id="@+id/action_commentaryFragment_to_guatemalaFragment2"
+            app:destination="@id/guatemalaFragment2"
+            app:popUpTo="@+id/guatemalaFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>

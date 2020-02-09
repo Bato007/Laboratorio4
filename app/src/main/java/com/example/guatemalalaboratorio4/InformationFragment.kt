@@ -65,10 +65,13 @@ class InformationFragment : Fragment() {
         model!!.message.observe(this,
             Observer<Any> { o -> setInformation(o!!.toString()) })
 
+
         // Mandandole la información a una actividad
         mBinding.commentBut.setOnClickListener{view: View ->
             model!!.setMsgCommunicator(mBinding.inputText.text.toString())
-            view.findNavController().navigate(R.id.action_informationFragment_to_commentary)
+            view.findNavController().navigate(R.id.action_informationFragment_to_commentaryFragment)
+
+            // Mandandole la informacion
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
