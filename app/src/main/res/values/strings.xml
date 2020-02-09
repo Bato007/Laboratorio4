@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Meet Guatemala</string>
+    <string name="castillo_san_felipe">Castillo San Felipe</string>
+    <string name="buttonstar">buttonStar</string>
+    <string name="nombre">Nombre</string>
+    <string name="your_name">Your Name</string>
+    <string name="antigua_guatemala">Antigua Guatemala</string>
+    <string name="xetulul">Xetulul</string>
+    <string name="r_o_dulce">Río Dulce</string>
+    <string name="biography">
+        I was born in 11/12/2000 on Guatemala, by my mother Silvia and my father Roberto.
+        \nI started school at the age of 5 in "Lluvias del Saber" that closed that year,
+        so I moved to "Marubal" for one year until I went to MacDermont School were I
+        finished my school days.
+        \nSo I decided to study Computer Science because I like technology and I like to
+        innovate so it was the perfect career, the FJBG grant me a scholarship for UVG, I
+        liked my first year a lot. I hope that I do the same with this year.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comment">Comment</string>
+    <string name="commentary">Commentary</string>
+    <string name="author">Author:</string>
+    <string name="imagebiography">imageBiography</string>
+    <string name="meet_author">Meet the Author</string>
+    <string name="sharebut">shareBut</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/guatemalaFragment2">
+
+    <fragment
+        android:id="@+id/guatemalaFragment2"
+        android:name="com.example.guatemalalaboratorio4.GuatemalaFragment"
+        android:label="GuatemalaFragment" >
+        <action
+            android:id="@+id/action_guatemalaFragment2_to_informationFragment"
+            app:destination="@id/informationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/informationFragment"
+        android:name="com.example.guatemalalaboratorio4.InformationFragment"
+        android:label="InformationFragment" >
+        <action
+            android:id="@+id/action_informationFragment_to_commentary"
+            app:destination="@id/commentary" />
+        <action
+            android:id="@+id/action_informationFragment_to_guatemalaFragment2"
+            app:destination="@id/guatemalaFragment2"
+            app:popUpTo="@+id/guatemalaFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/biographyFragment"
+        android:name="com.example.guatemalalaboratorio4.BiographyFragment"
+        android:label="biography_fragment"
+        tools:layout="@layout/biography_fragment" />
+    <activity
+        android:id="@+id/commentary"
+        android:name="com.example.guatemalalaboratorio4.Commentary"
+        android:label="activity_commentary"
+        tools:layout="@layout/activity_commentary" />
+</navigation>
